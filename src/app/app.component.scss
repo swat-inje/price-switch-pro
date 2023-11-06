@@ -14,12 +14,6 @@
             font-family: sans-serif;
             font-size: xx-large;
             font-weight: 500;
-            .selectToggle {
-                .leftClass {
-                    width: 10px;
-                    background: #425df9;
-                }
-            }
         }
         .subjectLine {
             color: #969ca1;
@@ -28,6 +22,7 @@
             background-color: #fff;
             height: 65vh;
             width: 18vw;
+            cursor: pointer;
         }
         .card:hover {
             background-color: #161a34;
@@ -39,5 +34,16 @@
                 background-color: #425df9;
             }
         }
+    }
+
+    .selectedClass {
+        background: #161a34;
+        cursor: pointer;
+        background: #425df9;
+        color: #fff;
+    }
+    .unselectedClass {
+        background: #fff;
+        cursor: pointer;
     }
 }

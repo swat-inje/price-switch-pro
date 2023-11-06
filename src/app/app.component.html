@@ -1,24 +1,28 @@
 <div id="priceComponent">
-  <div>
+  <div class="innerContainer">
     <p class="heading pt-3 text-center">Choose your plan</p>
-    <div>
-      <span class="d-flex justify-content-center selectToggle">
-        <div class="p-1 leftClass" value="Inr" (click)="toggleCurrency($event)">
-          Inr
-        </div>
-        <div
-          class="p-1 rightClass"
-          value="Dollar"
-          (click)="toggleCurrency($event)"
-        >
-          Dollar
-        </div>
-      </span>
+    <div class="d-flex justify-content-center">
+      <div
+        class="p-1 px-4"
+        [ngClass]="toggle === 'Inr' ? 'selectedClass' : 'unselectedClass'"
+        value="Inr"
+        (click)="toggleCurrency($event)"
+      >
+        Inr
+      </div>
+      <div
+        class="p-1 px-2"
+        [ngClass]="toggle === 'Dollar' ? 'selectedClass' : 'unselectedClass'"
+        value="Dollar"
+        (click)="toggleCurrency($event)"
+      >
+        Dollar
+      </div>
     </div>
-    <p class="subjectLine text-center">
+    <p class="subjectLine text-center pt-2">
       14 days unlimited free trial. No contract or credit card required.
     </p>
-    <div class="d-flex justify-content-center mt-5">
+    <div class="d-flex justify-content-center mt-4">
       <div class="card mx-2">
         <p class="text-center my-2 border-bottom pb-2 planColour">Basic Plan</p>
         <h5 class="text-center mt-2">Starter</h5>

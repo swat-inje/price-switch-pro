@@ -1,0 +1,43 @@
+#priceComponent {
+    background: #dfdee1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .innerContainer {
+        // text-align: center;
+        background: #f5f7f9;
+        width: 70vw;
+        height: 97vh;
+        .heading {
+            font-family: sans-serif;
+            font-size: xx-large;
+            font-weight: 500;
+            .selectToggle {
+                .leftClass {
+                    width: 10px;
+                    background: #425df9;
+                }
+            }
+        }
+        .subjectLine {
+            color: #969ca1;
+        }
+        .card {
+            background-color: #fff;
+            height: 65vh;
+            width: 18vw;
+        }
+        .card:hover {
+            background-color: #161a34;
+            color: #fff;
+            height: 68vh;
+            width: 18vw;
+            margin-top: -12px;
+            .planColour {
+                background-color: #425df9;
+            }
+        }
+    }
+}
